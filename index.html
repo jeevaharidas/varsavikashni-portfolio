@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varsavikashni — Interior Design Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">Varsavikashni</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Replace with your hero image: images/hero/hero-bg.jpg -->
+      <div class="hero__bg-placeholder"></div>
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__label reveal">Interior Design Portfolio</p>
+      <h1 class="hero__title reveal reveal--delay-1">
+        <span>Varsa</span><br>
+        <em>Vikashni</em>
+      </h1>
+      <p class="hero__sub reveal reveal--delay-2">
+        Creating thoughtful interiors that balance aesthetics,<br>
+        function, materiality, and human experience.
+      </p>
+      <a href="#portfolio" class="btn reveal reveal--delay-3">View Work</a>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Left: photo -->
+        <div class="about__photo-wrap">
+          <div class="about__photo-frame">
+            <!-- Replace: images/profile/varsa-portrait.jpg -->
+            <img
+              src="images/profile/varsa-portrait.jpg"
+              alt="Varsavikashni"
+              class="about__photo"
+              onerror="this.parentElement.classList.add('img-placeholder')"
+            />
+          </div>
+          <div class="about__photo-accent"></div>
+        </div>
+
+        <!-- Right: copy -->
+        <div class="about__copy">
+          <p class="section-label">About</p>
+          <p class="about__text">
+            My approach to design is rooted in creating spaces that feel effortless,
+            inviting, and in quiet harmony with nature. As an interior design master's
+            student, I focus on the interplay of materiality, proportion, and spatial
+            clarity to craft environments that balance refined aesthetics with intuitive
+            functionality resulting in experiences that feel both timeless and
+            deeply personal.
+          </p>
+
+          <div class="about__cards">
+            <div class="about__card">
+              <h4>Education</h4>
+              <ul>
+                <li>M.Des in Interior Design<br><span>Pearl Academy, Bengaluru</span></li>
+                <li>B.Com Honours<br><span>Christ (Deemed to be University)</span></li>
+              </ul>
+            </div>
+            <div class="about__card">
+              <h4>Skills</h4>
+              <div class="skills-list">
+                <span>AutoCAD</span>
+                <span>SketchUp</span>
+                <span>V-Ray</span>
+                <span>Photoshop</span>
+                <span>Canva</span>
+                <span>MS Excel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pillars -->
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar__num">01</div>
+          <h3>Design Approach</h3>
+          <p>Material-led storytelling with a balance of modern simplicity and rooted cultural warmth.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__num">02</div>
+          <h3>Technical Strength</h3>
+          <p>Working drawings, spatial planning, visualisation, and presentation-ready design communication.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__num">03</div>
+          <h3>Creative Practice</h3>
+          <p>Artworks and hand-rendered explorations that strengthen observation, detail, and visual sensitivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Selected Works</p>
+        <h2 class="section-title">A curated collection of residential interiors,<br>visualization studies, and handmade artwork.</h2>
+      </div>
+
+      <!-- ── PROJECT 01: Agam Puram ── -->
+      <article class="project project--left" id="project-01">
+        <div class="project__media">
+          <div class="project__images">
+            <!--
+              ADD YOUR IMAGES HERE:
+              Place your Agam Puram project photos in: images/agam-puram/
+              Recommended: 4–6 images (jpg/webp)
+            -->
+            <img src="images/agam-puram/img-1.jpg" alt="Agam Puram - Main View" class="project__img project__img--main" onerror="this.classList.add('img-ph')" />
+            <img src="images/agam-puram/img-2.jpg" alt="Agam Puram - Detail" class="project__img project__img--sub1" onerror="this.classList.add('img-ph')" />
+            <img src="images/agam-puram/img-3.jpg" alt="Agam Puram - Courtyard" class="project__img project__img--sub2" onerror="this.classList.add('img-ph')" />
+          </div>
+          <div class="project__gallery-strip">
+            <img src="images/agam-puram/img-4.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/agam-puram/img-5.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/agam-puram/img-6.jpg" alt="" onerror="this.classList.add('img-ph')" />
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__num">01</div>
+          <h3 class="project__title">Agam Puram</h3>
+          <p class="project__type">Residential Interior Design</p>
+          <p class="project__desc">
+            A bold brutalist shell of exposed brick and concrete softened through rustic
+            South Indian details, greenery, and a courtyard-led layout that connects
+            indoor and outdoor life.
+          </p>
+          <div class="project__meta">
+            <span>2400 sq ft</span>
+            <span>Bengaluru</span>
+            <span>2025</span>
+            <span>AutoCAD</span>
+          </div>
+            <a 
+              href="https://drive.google.com/drive/folders/1uGT9v35vD16AXNWKsyPAAzWdoS-UjWps?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn--outline">
+              Explore Project →
+            </a>        </div>
+      </article>
+
+      <!-- ── PROJECT 02: Software Skills / Viz Studies ── -->
+      <article class="project project--right" id="project-02">
+        <div class="project__media">
+          <div class="project__images">
+
+            <img src="images/software-skills/img-1.jpg" alt="Visualization Study 1" class="project__img project__img--main" onerror="this.classList.add('img-ph')" />
+            <img src="images/software-skills/img-2.jpg" alt="Visualization Study 2" class="project__img project__img--sub1" onerror="this.classList.add('img-ph')" />
+            <img src="images/software-skills/img-3.jpg" alt="Visualization Study 3" class="project__img project__img--sub2" onerror="this.classList.add('img-ph')" />
+          </div>
+          <div class="project__gallery-strip">
+            <img src="images/software-skills/img-4.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/software-skills/img-5.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/software-skills/img-6.jpg" alt="" onerror="this.classList.add('img-ph')" />
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__num">02</div>
+          <h3 class="project__title">Visualization Studies</h3>
+          <p class="project__type">Architectural Visualization</p>
+          <p class="project__desc">
+            Exploring architectural visualization as a way to bridge design and
+            experience — focusing on how light defines a space, textures add depth
+            and tactility, and proportion shapes perception.
+          </p>
+          <div class="project__meta">
+            <span>Photoshop</span>
+            <span>SketchUp</span>
+            <span>V-Ray</span>
+          </div>
+ <a 
+              href="https://drive.google.com/drive/folders/1Kyamu2IKxZN4ONNVWDT4OQ5QNkzpjtbt?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn--outline">
+              Explore Project →
+            </a>         </div>
+      </article>
+
+      <!-- ── PROJECT 03: Artworks ── -->
+      <article class="project project--left" id="project-03">
+        <div class="project__media">
+          <div class="project__images">
+            <!--
+              ADD YOUR IMAGES HERE:
+              Place your artwork photos in: images/artworks/
+            -->
+            <img src="images/artworks/img-1.jpg" alt="Artwork 1" class="project__img project__img--main" onerror="this.classList.add('img-ph')" />
+            <img src="images/artworks/img-2.jpg" alt="Artwork 2" class="project__img project__img--sub1" onerror="this.classList.add('img-ph')" />
+            <img src="images/artworks/img-3.jpg" alt="Artwork 3" class="project__img project__img--sub2" onerror="this.classList.add('img-ph')" />
+          </div>
+          <div class="project__gallery-strip">
+            <img src="images/artworks/img-4.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/artworks/img-5.jpg" alt="" onerror="this.classList.add('img-ph')" />
+            <img src="images/artworks/img-6.jpg" alt="" onerror="this.classList.add('img-ph')" />
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__num">03</div>
+          <h3 class="project__title">Artworks</h3>
+          <p class="project__type">Handmade Visual Studies</p>
+          <p class="project__desc">
+            A collection of detailed artworks using acrylic paint, microtip pens,
+            watercolours, and silhouette techniques. Exploring contrast, precision,
+            and layered storytelling through diverse mediums and expressive compositions.
+          </p>
+          <div class="project__meta">
+            <span>Silhouette</span>
+            <span>Stippling</span>
+            <span>Acrylic</span>
+            <span>Live Sketching</span>
+          </div>
+            <a 
+              href="https://drive.google.com/drive/folders/1WLhB-CJwLXBR4InkbI22elqmWz5VxIQN?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn--outline">
+              Explore Project →
+            </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       LIGHTBOX (full-screen gallery)
+  ═══════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox__prev" id="lbPrev">‹</button>
+    <button class="lightbox__next" id="lbNext">›</button>
+    <div class="lightbox__stage">
+      <img id="lbImg" src="" alt="" />
+      <p id="lbCaption"></p>
+    </div>
+    <div class="lightbox__thumbs" id="lbThumbs"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="contact__heading">Let's Work<br><em>Together</em></h2>
+          <p class="contact__sub">
+            For collaborations, internships, portfolio enquiries,<br>
+            or design conversations — feel free to reach out.
+          </p>
+          <ul class="contact__info">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>varsavikashni@gmail.com</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Bengaluru, India</span>
+            </li>
+          </ul>
+          <div class="contact__social">
+            <a href="https://linkedin.com/in/varsavikashni" target="_blank" rel="noopener" class="social-pill">LinkedIn</a>
+            <a href="https://behance.net/varsanarayanan" target="_blank" rel="noopener" class="social-pill">Behance</a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--full">Send Message</button>
+          <p class="form-success" id="formSuccess">Thank you! I'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__logo">Varsavikashni</p>
+      <p class="footer__copy">© 2025 Varsavikashni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
